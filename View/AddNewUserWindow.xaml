@@ -1,0 +1,31 @@
+﻿<Window x:Class="AddressBook.View.AddNewUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AddressBook.View"
+        mc:Ignorable="d"
+        Title="Add Contact" Height="300" Width="300"
+        Name="AddNewContactWnd">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Width="200">
+            <TextBlock Text="Full Name"/>
+            <TextBox Name="Full_Name" Text="{Binding ContactName}"/>
+            <TextBlock Text="Address"/>
+            <TextBox Name="Address" Text="{Binding ContactAddress}"/>
+            <TextBlock Text="Phone"/>
+            <TextBox Name="Phone" Text="{Binding ContactPhone}"/>
+         
+        </StackPanel>
+        <Button Grid.Row="1" Content="Add Contact"
+                Command="{Binding AddNewContact}"
+                CommandParameter="{Binding ElementName=AddNewContactWnd}"/>
+    </Grid>
+</Window>

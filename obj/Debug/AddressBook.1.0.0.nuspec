@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AddressBook</id>
+    <version>1.0.0</version>
+    <authors>AddressBook</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="Microsoft.EntityFrameworkCore.Sqlite" version="5.0.9" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework=".NETCoreApp3.1">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\lostf\YandexDisk\Леша\Projects\Freelance\C# Masutin\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\AddressBook.runtimeconfig.json" target="lib\netcoreapp3.1\AddressBook.runtimeconfig.json" />
+    <file src="C:\Users\lostf\YandexDisk\Леша\Projects\Freelance\C# Masutin\AddressBook\AddressBook\bin\Debug\netcoreapp3.1\AddressBook.dll" target="lib\netcoreapp3.1\AddressBook.dll" />
+  </files>
+</package>
